@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pySigma-backend-arroyosql"
+version = "0.1.0"
+description = "pySigma arroyo-sql backend"
+authors = ["Thomas Yerex <tomy@sparkyjones.com>"]
+license = "LGPL-3.0-only"
+repository = "https://github.com/tomyerex/pySigma-backend-arroyosql"
+packages = [
+    { include = "sigma" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pysigma = "^0.11.7"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+pytest-cov = "^5.0.0"
+coverage = "^7.5.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
